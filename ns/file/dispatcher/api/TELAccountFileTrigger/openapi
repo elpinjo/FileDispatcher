@@ -1,0 +1,58 @@
+openapi: 3.0.1
+info:
+  title: NL_JL_PRX_TEL_AccountFile_Webhook
+  description: Used for Webhook sent by self-hosted service to indicate there is file
+    data to be retrieved
+  version: "1.0"
+servers:
+- url: https://dev6088542.a-vir-d1.apigw.ipaas.automation.ibm.com/gateway/NL_JL_PRX_TEL_AccountFile_Webhook/1.0
+security:
+- apiKey: []
+paths:
+  /filepath:
+    summary: /filepath
+    post:
+      operationId: filepath_POST_1
+      parameters: []
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                FilePath:
+                  type: string
+                  readOnly: false
+            examples: {}
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/filepath_POST_response_1'
+              examples: {}
+        "401":
+          description: Access Denied
+          content: {}
+components:
+  schemas:
+    filepath_POST_response_1:
+      required:
+      - Status
+      type: object
+      properties:
+        Status:
+          type: string
+  responses: {}
+  parameters: {}
+  examples: {}
+  requestBodies: {}
+  headers: {}
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      name: x-Gateway-APIKey
+      in: header
+  links: {}
+  callbacks: {}

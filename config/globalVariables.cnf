@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <array name="globalVariables" type="record" depth="1">
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">ACCOUNT_DIR</value>
+        <value name="value">/Volumes/demos/PXG/incoming</value>
+        <value name="isSecure">false</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">FILE_API_ENDPOINT</value>
+        <value name="value">https://dev6088542.a-vir-d1.apigw.ipaas.automation.ibm.com/gateway/NL_JL_PRX_TEL_AccountFile_Webhook/1.0</value>
+        <value name="isSecure">false</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">API_KEY</value>
+        <value name="value">e1dc54ef-6397-45fe-967e-81796855503d</value>
+        <value name="isSecure">false</value>
+      </record>
+    </array>
+  </record>
+</IDataXMLCoder>
