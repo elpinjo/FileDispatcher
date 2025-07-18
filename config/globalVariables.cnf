@@ -18,6 +18,16 @@
         <value name="value">e1dc54ef-6397-45fe-967e-81796855503d</value>
         <value name="isSecure">false</value>
       </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">WORKING_DIR</value>
+        <value name="value">/Volumes/demos/PXG/working</value>
+        <value name="isSecure">false</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">DONE_DIR</value>
+        <value name="value">/Volumes/demos/PXG/done</value>
+        <value name="isSecure">false</value>
+      </record>
     </array>
   </record>
 </IDataXMLCoder>
