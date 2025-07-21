@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT></COMMENT>
 
   <!-- nodes -->
 
@@ -225,6 +226,8 @@
       </record>
     </array>
     <value name="nillable">true</value>
+    <Boolean name="readOnly">false</Boolean>
+    <Boolean name="writeOnly">false</Boolean>
     <array name="rec_fields" type="record" depth="1">
       <record javaclass="com.wm.util.Values">
         <value name="node_type">field</value>
@@ -257,6 +260,8 @@
           </record>
         </array>
         <value name="nillable">true</value>
+        <Boolean name="readOnly">false</Boolean>
+        <Boolean name="writeOnly">false</Boolean>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">field</value>
@@ -287,6 +292,8 @@
           </record>
         </array>
         <value name="nillable">true</value>
+        <Boolean name="readOnly">false</Boolean>
+        <Boolean name="writeOnly">false</Boolean>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">field</value>
@@ -316,6 +323,8 @@
           </record>
         </array>
         <value name="nillable">true</value>
+        <Boolean name="readOnly">false</Boolean>
+        <Boolean name="writeOnly">false</Boolean>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -359,6 +368,8 @@
               </record>
             </array>
             <value name="nillable">false</value>
+            <Boolean name="readOnly">false</Boolean>
+            <Boolean name="writeOnly">false</Boolean>
             <array name="rec_fields" type="record" depth="1">
               <record javaclass="com.wm.util.Values">
                 <value name="node_type">field</value>
@@ -392,6 +403,7 @@
                 </array>
                 <value name="nillable">false</value>
                 <Boolean name="readOnly">false</Boolean>
+                <Boolean name="writeOnly">false</Boolean>
               </record>
             </array>
             <value name="modifiable">true</value>
@@ -425,6 +437,8 @@
           </record>
         </array>
         <value name="nillable">true</value>
+        <Boolean name="readOnly">false</Boolean>
+        <Boolean name="writeOnly">false</Boolean>
         <array name="rec_fields" type="record" depth="1">
           <record javaclass="com.wm.util.Values">
             <value name="node_type">field</value>
@@ -454,6 +468,8 @@
               </record>
             </array>
             <value name="nillable">true</value>
+            <Boolean name="readOnly">false</Boolean>
+            <Boolean name="writeOnly">false</Boolean>
           </record>
           <record javaclass="com.wm.util.Values">
             <value name="node_type">record</value>
@@ -481,6 +497,8 @@
               </record>
             </array>
             <value name="nillable">true</value>
+            <Boolean name="readOnly">false</Boolean>
+            <Boolean name="writeOnly">false</Boolean>
             <array name="rec_fields" type="record" depth="1">
               <record javaclass="com.wm.util.Values">
                 <value name="node_type">field</value>
@@ -507,6 +525,8 @@
                   </record>
                 </array>
                 <value name="nillable">true</value>
+                <Boolean name="readOnly">false</Boolean>
+                <Boolean name="writeOnly">false</Boolean>
               </record>
             </array>
             <value name="modifiable">true</value>
@@ -540,6 +560,8 @@
           </record>
         </array>
         <value name="nillable">true</value>
+        <Boolean name="readOnly">false</Boolean>
+        <Boolean name="writeOnly">false</Boolean>
         <array name="rec_fields" type="record" depth="1">
         </array>
         <value name="modifiable">true</value>
@@ -570,6 +592,8 @@
           </record>
         </array>
         <value name="nillable">true</value>
+        <Boolean name="readOnly">false</Boolean>
+        <Boolean name="writeOnly">false</Boolean>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -774,6 +798,47 @@
 </Values>
 </DATA>
 </MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/contentType;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">application/x-www-form-urlencoded</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">field</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">contentType</value>
+    <value name="field_type">string</value>
+    <value name="field_is_jsonSchema">true</value>
+    <value name="field_dim">0</value>
+    <value name="field_opt">true</value>
+    <array name="field_options" type="value" depth="1">
+      <value>application/x-www-form-urlencoded</value>
+    </array>
+    <array name="field_content_type" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <record name="extendedProperties" javaclass="com.wm.util.Values">
+          <record name="extensionName" javaclass="com.wm.util.Values">
+            <value name="key">extensionName</value>
+            <value name="value">openapi</value>
+            <value name="type">STRING</value>
+          </record>
+          <record name="extensionVersion" javaclass="com.wm.util.Values">
+            <value name="key">extensionVersion</value>
+            <value name="value">3.0.2</value>
+            <value name="type">STRING</value>
+          </record>
+        </record>
+      </record>
+    </array>
+    <value name="nillable">true</value>
+    <Boolean name="readOnly">false</Boolean>
+    <Boolean name="writeOnly">false</Boolean>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
 </MAP>
 
 <MAP MODE="OUTPUT">
@@ -805,7 +870,7 @@
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">directory</value>
+        <value name="field_name">contentType</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
         <value name="nillable">true</value>
@@ -880,6 +945,17 @@
         <value name="modifiable">true</value>
       </record>
       <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">directory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
         <value name="node_type">field</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
@@ -937,6 +1013,8 @@
           </record>
         </array>
         <value name="nillable">true</value>
+        <Boolean name="readOnly">false</Boolean>
+        <Boolean name="writeOnly">false</Boolean>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">field</value>
@@ -963,6 +1041,8 @@
           </record>
         </array>
         <value name="nillable">true</value>
+        <Boolean name="readOnly">false</Boolean>
+        <Boolean name="writeOnly">false</Boolean>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -1006,6 +1086,8 @@
               </record>
             </array>
             <value name="nillable">true</value>
+            <Boolean name="readOnly">false</Boolean>
+            <Boolean name="writeOnly">false</Boolean>
             <value name="modifiable">true</value>
             <value name="rec_ref">file.dispatcher.api.TELAccountFileTrigger_.docTypes:filepath_POST_response_1</value>
           </record>
@@ -1057,6 +1139,8 @@
       </record>
     </array>
     <value name="nillable">true</value>
+    <Boolean name="readOnly">false</Boolean>
+    <Boolean name="writeOnly">false</Boolean>
     <array name="rec_fields" type="record" depth="1">
       <record javaclass="com.wm.util.Values">
         <value name="node_type">field</value>
@@ -1083,6 +1167,8 @@
           </record>
         </array>
         <value name="nillable">true</value>
+        <Boolean name="readOnly">false</Boolean>
+        <Boolean name="writeOnly">false</Boolean>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">field</value>
@@ -1109,6 +1195,8 @@
           </record>
         </array>
         <value name="nillable">true</value>
+        <Boolean name="readOnly">false</Boolean>
+        <Boolean name="writeOnly">false</Boolean>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -1152,6 +1240,8 @@
               </record>
             </array>
             <value name="nillable">true</value>
+            <Boolean name="readOnly">false</Boolean>
+            <Boolean name="writeOnly">false</Boolean>
             <value name="modifiable">true</value>
             <value name="rec_ref">file.dispatcher.api.TELAccountFileTrigger_.docTypes:filepath_POST_response_1</value>
           </record>
@@ -1204,6 +1294,9 @@
 </MAPDELETE>
 
 <MAPDELETE FIELD="/accept;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/contentType;1;0">
 </MAPDELETE>
 </MAP>
 </INVOKE>
@@ -1312,6 +1405,8 @@
           </record>
         </array>
         <value name="nillable">true</value>
+        <Boolean name="readOnly">false</Boolean>
+        <Boolean name="writeOnly">false</Boolean>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">field</value>
@@ -1338,6 +1433,8 @@
           </record>
         </array>
         <value name="nillable">true</value>
+        <Boolean name="readOnly">false</Boolean>
+        <Boolean name="writeOnly">false</Boolean>
       </record>
     </array>
     <value name="modifiable">true</value>
