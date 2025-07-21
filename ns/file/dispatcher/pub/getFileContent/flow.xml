@@ -679,9 +679,6 @@
 
 <MAPDELETE FIELD="/fileName;1;0">
 </MAPDELETE>
-
-<MAPCOPY FROM="/targetFileName;1;0" TO="/filename;1;0">
-</MAPCOPY>
 </MAP>
 </INVOKE>
 
